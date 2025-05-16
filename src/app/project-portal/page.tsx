@@ -58,7 +58,6 @@ export default function ProjectPortal() {
             </li>
             <li>Overlaid heading, subheading, and CTAs</li>
             <li>Hero content fetched from Sanity (&quot;hero&quot; type)</li>
-
             <li>Gradient & z-index layering handled via Tailwind</li>
           </ul>
 
