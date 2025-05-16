@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function ProjectPortal() {
   const [entered, setEntered] = useState(false);
@@ -136,39 +137,16 @@ export default function JourneyCard({ title, summary }: JourneyCardProps) {
           <h2 className="text-2xl font-semibold mb-2">🔗 Key Links</h2>
           <ul className="list-disc list-inside text-blue-600 space-y-1">
             <li>
-              <a
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Visit the public homepage"
-              >
-                Home Page
-              </a>
+              <Link href="/">Home Page</Link>
             </li>
             <li>
-              <a
-                href="/journeys"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Browse journey options"
-              >
-                Journey Finder Page
-              </a>
+              <Link href="/journeys">Journey Finder Page</Link>
             </li>
             <li>
-              <a
-                href="/studio"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Open Sanity Studio admin panel"
-              >
-                Sanity Studio (CMS Admin)
-              </a>
+              <Link href="/studio">Sanity Studio (CMS Admin)</Link>
             </li>
             <li>
-              <a href="/project-portal" title="You're here">
-                Developer Portal
-              </a>
+              <Link href="/project-portal">Developer Portal</Link>
             </li>
           </ul>
         </section>
